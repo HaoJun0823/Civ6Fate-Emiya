@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FSN_Emiya_Archer_Leader_FrontEnd -->
+<!-- Author: HaoJun0823 -->
+<!-- DateCreated: 8/30/2019 9:49:06 AM -->
+<GameData>
+	<LocalizedText>
+
+		<!-- 领袖名称 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_NAME" Language="en_US">
+			<Text>Emiya</Text>
+		</Row>
+
+		<!-- 领袖技能说明 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_UBW_DESCRIPTION" Language="en_US">
+			<Text>Culture [ICON_Culture] affects the rate of territorial expansion +100% [NEWLINE] Urban population with granary [ICON_Citizen] growth rate +50% [NEWLINE] unit range [ICON_Range] +4, but combat power [ICON_Strength]-8, after research industrialization This negative effect can be offset.</Text>
+		</Row>
+
+		<!-- 领袖技能名称 来自Config-->
+		<Row Tag="LOC_TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW_NAME" Language="en_US">
+			<Text>Unlimited Blade Works</Text>
+		</Row>
+
+		<!-- 领袖名称 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_NAME" Language="zh_Hans_CN">
+			<Text>卫宫</Text>
+		</Row>
+
+		<!-- 领袖技能说明 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_UBW_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>文化[ICON_Culture]影响的领土扩张速度+100%[NEWLINE]拥有粮仓的城市人口[ICON_Citizen]成长速率+50%[NEWLINE]单位射程[ICON_Range]+4，但战斗力[ICON_Strength]-8，研究工业化后可抵消该负面效果。</Text>
+		</Row>
+
+		<!-- 领袖技能名称 来自Config-->
+		<Row Tag="LOC_TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW_NAME" Language="zh_Hans_CN">
+			<Text>无限剑制</Text>
+		</Row>
+
+		<!-- 领袖名称 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_NAME" Language="zh_Hant_HK">
+			<Text>衛宮</Text>
+		</Row>
+
+		<!-- 领袖技能说明 来自Config-->
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_UBW_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>文化[ICON_Culture]影響的領土擴張速度+100%[NEWLINE]擁有糧倉的城市人口[ICON_Citizen]成長速率+50%[NEWLINE]單位射程[ICON_Range]+4，但戰鬥力[ICON_Strength]-8，研究工業化後可抵消該負面效果。</Text>
+		</Row>
+
+		<!-- 领袖技能名称 来自Config-->
+		<Row Tag="LOC_TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW_NAME" Language="zh_Hant_HK">
+			<Text>無限劍製</Text>
+		</Row>
+
+
+	</LocalizedText>
+</GameData>

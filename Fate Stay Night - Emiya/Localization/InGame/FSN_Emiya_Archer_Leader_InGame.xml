@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FSN_Emiya_Archer_Leader_InGame -->
+<!-- Author: HaoJun0823 -->
+<!-- DateCreated: 8/30/2019 10:15:12 AM -->
+<GameData>
+
+	<LocalizedText>
+
+
+		<!-- 领袖信息开始 这段不需要可以删掉-->
+		<Row Tag="LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA" Language="zh_Hans_CN">
+			<!-- 领袖信息: 加载界面词汇 -->
+			<Text>
+				[NEWLINE]此身为剑之骨
+				[NEWLINE]血流如玄铁，心脆似琉璃
+				[NEWLINE]历经战场无数次而不败
+				[NEWLINE]未曾一次败退
+				[NEWLINE]未曾被人理解
+				[NEWLINE]其常立于剑丘之巅，自醉于胜利之中
+				[NEWLINE]因此，此生已无任何意义
+				[NEWLINE]则其身，注定为剑而生
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 你对AI宣布友谊允许的时候 -->
+			<Text>好，让我们联合起来。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 你对AI宣布友谊被拒绝的时候 -->
+			<Text>不行，你不能和我一起行动。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当AI对你宣布友谊的时候 -->
+			<Text>我们现在合作对双方都有意义。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你同意AI对你的宣布友谊 -->
+			<Text>明智之举。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你拒绝AI对你的宣布友谊 -->
+			<Text>……好吧……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你对这个AI宣战？ -->
+			<Text>你挑战我？哼……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当这个AI向你宣战？ -->
+			<Text>现在，我是你的对手……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当AI被其他AI击败会说这些话？ -->
+			<Text>我输了……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你击败AI他会说这些话？-->
+			<Text>很好，下次交手的时候，我可不留情。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当AI同意你的代表团-->
+			<Text>好，我会准备丰盛的大餐。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当AI拒绝你的代表团-->
+			<Text>最近不可以。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<Text>这是卫宫特制口粮的配方，请你收下。</Text>
+			<!-- 领袖外交信息: 当AI派遣代表团的时候-->
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你公开指责AI-->
+			<Text>大胆！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当AI公开指责你-->
+			<Text>你为何与正义背道而驰？[NEWLINE]（谴责你）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你第一次遇到AI-->
+			<Text>Arhcer，卫宫，请问你是哪位？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你第一次遇到AI并且他对你有好感的时候？-->
+			<Text>想不想来尝一尝我的手艺？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 当你第一次遇到AI并且他离你比较近的时候？-->
+			<Text>你们那边的情况如何？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: 一般打招呼用-->
+			<Text>早上好。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI对你的好感增加了的前置-->
+			<Text>你做了好事。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI对你的好感增加了的描述-->
+			<Text>（卫宫对您的好感增加了）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI对你的好感减少了的前置-->
+			<Text>你的行为很可恶……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI对你的好感减少了的描述-->
+			<Text>（卫宫对您的好感减少了）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI允许你同盟-->
+			<Text>结盟对你我是好事。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI答应你和平的请求-->
+			<Text>停战。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI拒绝你和平的请求-->
+			<Text>不可能！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI主动提出和平的请求-->
+			<Text>继续打下去对我们双方不好！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI答应你通过他的领地-->
+			<Text>可以。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI拒绝你通过他的领地-->
+			<Text>现在不行。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI询问你是否愿意让他的部队通过你的领地-->
+			<Text>我能不能穿过你的领域？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI说你军队差劲-->
+			<Text>你的兵力不足我的一半。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI他提出一个交易？-->
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hans_CN">
+			<!-- 领袖外交信息: AI他拒绝你的一个交易？-->
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+
+
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_TITLE" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 名字-->
+			<Text>卫宫</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_SUBTITLE" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 描述-->
+			<Text>未来的守护者</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 一段有语音的词，单独被展示出来-->
+			<Text>I am the bone of my sword.</Text>
+		</Row>
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 历史1段，还可以有2,3？-->
+			<Text>{LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA}</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<!-- 领袖百科信息:描述你怎么解决这个领袖-->
+			<Text>小心卫宫的弓兵！</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 描述你该怎么玩这个领袖-->
+			<Text>扩大疆域，用领土吞并对方。</Text>
+		</Row>
+		<!-- 领袖信息结束-->
+
+
+
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="zh_Hans_CN">
+			<!-- 领袖百科信息: 一段有语音的词，单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>{LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE}</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_NAME" Language="zh_Hans_CN">
+			<!-- 领袖议程名称：单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>无貌之正义</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_DESCRIPTION" Language="zh_Hans_CN">
+			<!-- 领袖议程说明: 单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>嫉恶如仇</Text>
+		</Row>
+
+
+		<!-- 領袖信息開始 這段不需要可以刪掉-->
+		<Row Tag="LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA" Language="zh_Hant_HK">
+			<!-- 領袖信息: 加載界面詞匯 -->
+			<Text>
+				[NEWLINE]此身為劍之骨
+				[NEWLINE]血流如玄鐵，心脆似琉璃
+				[NEWLINE]歷經戰場無數次而不敗
+				[NEWLINE]未曾壹次敗退
+				[NEWLINE]未曾被人理解
+				[NEWLINE]其常立於劍丘之巔，自醉於勝利之中
+				[NEWLINE]因此，此生已無任何意義
+				[NEWLINE]則其身，註定為劍而生
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 妳對AI宣布友誼允許的時候 -->
+			<Text>好，讓我們聯合起來。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 妳對AI宣布友誼被拒絕的時候 -->
+			<Text>不行，妳不能和我壹起行動。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當AI對妳宣布友誼的時候 -->
+			<Text>我們現在合作對雙方都有意義。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳同意AI對妳的宣布友誼 -->
+			<Text>明智之舉。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳拒絕AI對妳的宣布友誼 -->
+			<Text>……好吧……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳對這個AI宣戰？ -->
+			<Text>妳挑戰我？哼……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當這個AI向妳宣戰？ -->
+			<Text>現在，我是妳的對手……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當AI被其他AI擊敗會說這些話？ -->
+			<Text>我輸了……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳擊敗AI他會說這些話？-->
+			<Text>很好，下次交手的時候，我可不留情。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當AI同意妳的代表團-->
+			<Text>好，我會準備豐盛的大餐。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當AI拒絕妳的代表團-->
+			<Text>最近不可以。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<Text>這是衛宮特制口糧的配方，請妳收下。</Text>
+			<!-- 領袖外交信息: 當AI派遣代表團的時候-->
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳公開指責AI-->
+			<Text>大膽！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當AI公開指責妳-->
+			<Text>妳為何與正義背道而馳？[NEWLINE]（譴責妳）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳第壹次遇到AI-->
+			<Text>Arhcer，衛宮，請問妳是哪位？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳第壹次遇到AI並且他對妳有好感的時候？-->
+			<Text>想不想來嘗壹嘗我的手藝？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 當妳第壹次遇到AI並且他離妳比較近的時候？-->
+			<Text>妳們那邊的情況如何？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: 壹般打招呼用-->
+			<Text>早上好。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI對妳的好感增加了的前置-->
+			<Text>妳做了好事。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI對妳的好感增加了的描述-->
+			<Text>（衛宮對您的好感增加了）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI對妳的好感減少了的前置-->
+			<Text>妳的行為很可惡……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI對妳的好感減少了的描述-->
+			<Text>（衛宮對您的好感減少了）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI允許妳同盟-->
+			<Text>結盟對妳我是好事。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI答應妳和平的請求-->
+			<Text>停戰。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI拒絕妳和平的請求-->
+			<Text>不可能！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI主動提出和平的請求-->
+			<Text>繼續打下去對我們雙方不好！</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI答應妳通過他的領地-->
+			<Text>可以。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI拒絕妳通過他的領地-->
+			<Text>現在不行。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI詢問妳是否願意讓他的部隊通過妳的領地-->
+			<Text>我能不能穿過妳的領域？</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI說妳軍隊差勁-->
+			<Text>妳的兵力不足我的壹半。</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI他提出壹個交易？-->
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="zh_Hant_HK">
+			<!-- 領袖外交信息: AI他拒絕妳的壹個交易？-->
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+
+
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_TITLE" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 名字-->
+			<Text>衛宮</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_SUBTITLE" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 描述-->
+			<Text>未來的守護者</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 壹段有語音的詞，單獨被展示出來-->
+			<Text>I am the bone of my sword.</Text>
+		</Row>
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 歷史1段，還可以有2,3？-->
+			<Text>{LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA}</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<!-- 領袖百科信息:描述妳怎麽解決這個領袖-->
+			<Text>小心衛宮的弓兵！</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 描述妳該怎麽玩這個領袖-->
+			<Text>擴大疆域，用領土吞並對方。</Text>
+		</Row>
+		<!-- 領袖信息結束-->
+
+
+
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="zh_Hant_HK">
+			<!-- 領袖百科信息: 壹段有語音的詞，單獨被展示出來，這是來自Leader_Data的信息-->
+			<Text>{LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE}</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_NAME" Language="zh_Hant_HK">
+			<!-- 領袖議程名稱：單獨被展示出來，這是來自Leader_Data的信息-->
+			<Text>無貌之正義</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_DESCRIPTION" Language="zh_Hant_HK">
+			<!-- 領袖議程說明: 單獨被展示出來，這是來自Leader_Data的信息-->
+			<Text>嫉惡如仇</Text>
+		</Row>
+
+
+
+
+
+
+		<!-- 领袖信息开始 这段不需要可以删掉-->
+		<Row Tag="LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA" Language="en_US">
+			<!-- 领袖信息: 加载界面词汇 -->
+			<Text>
+				[NEWLINE]I am the bone of my sword.
+				[NEWLINE]Steel is my body and fire is my blood.
+				[NEWLINE]I have created over a thousand blades.
+				[NEWLINE]Unknown to Death
+				[NEWLINE]Nor known to Life
+				[NEWLINE]Have withstood pain to create many weapons.
+				[NEWLINE]Yet, those hands will never hold anything.
+				[NEWLINE]So as I pray, Unlimited Blade Works
+			</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 你对AI宣布友谊允许的时候 -->
+			<Text>Ok, let's unite.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 你对AI宣布友谊被拒绝的时候 -->
+			<Text>No, you can't act with me.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当AI对你宣布友谊的时候 -->
+			<Text>Our cooperation now makes sense for both parties.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你同意AI对你的宣布友谊 -->
+			<Text>Be wise.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你拒绝AI对你的宣布友谊 -->
+			<Text>……Ok……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你对这个AI宣战？ -->
+			<Text>Do you challenge me? Humph……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当这个AI向你宣战？ -->
+			<Text>Now, I am your opponent...</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当AI被其他AI击败会说这些话？ -->
+			<Text>I lost……</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你击败AI他会说这些话？-->
+			<Text>Very good, I will not be merciful when I play next time.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当AI同意你的代表团-->
+			<Text>Ok, I will prepare a sumptuous meal.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当AI拒绝你的代表团-->
+			<Text>Not available recently.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<Text>This is the recipe for my special ration, please accept it.</Text>
+			<!-- 领袖外交信息: 当AI派遣代表团的时候-->
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你公开指责AI-->
+			<Text>Daring!</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当AI公开指责你-->
+			<Text>Why do you run counter to justice?[NEWLINE]（Condemn you）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你第一次遇到AI-->
+			<Text>Arhcer, Emiya, Who is you?</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你第一次遇到AI并且他对你有好感的时候？-->
+			<Text>Do you want to try my craft?</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 当你第一次遇到AI并且他离你比较近的时候？-->
+			<Text>What is the situation on your side?</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: 一般打招呼用-->
+			<Text>Good morning.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI对你的好感增加了的前置-->
+			<Text>You did a good thing.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI对你的好感增加了的描述-->
+			<Text>（Emiya has increased your affection for you）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI对你的好感减少了的前置-->
+			<Text>Your behavior is very abominable...</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_FSN_ARCHER_EMIYA_REASON_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI对你的好感减少了的描述-->
+			<Text>（Emiya reduced your affection for you）</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI允许你同盟-->
+			<Text>Alliance is good for you and me.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI答应你和平的请求-->
+			<Text>armistice.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI拒绝你和平的请求-->
+			<Text>impossible!</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI主动提出和平的请求-->
+			<Text>It is not good for us to continue the war.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI答应你通过他的领地-->
+			<Text>Okay.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI拒绝你通过他的领地-->
+			<Text>Not now.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI询问你是否愿意让他的部队通过你的领地-->
+			<Text>Can I cross your field?</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI说你军队差劲-->
+			<Text>Your strength is not enough for me.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI他提出一个交易？-->
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY" Language="en_US">
+			<!-- 领袖外交信息: AI他拒绝你的一个交易？-->
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FSN_ARCHER_EMIYA_ANY}</Text>
+		</Row>
+
+
+
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_TITLE" Language="en_US">
+			<!-- 领袖百科信息: 名字-->
+			<Text>Emiya</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_SUBTITLE" Language="en_US">
+			<!-- 领袖百科信息: 描述-->
+			<Text>Guardian of the future</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="en_US">
+			<!-- 领袖百科信息: 一段有语音的词，单独被展示出来-->
+			<Text>I am the bone of my sword.</Text>
+		</Row>
+
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<!-- 领袖百科信息: 历史1段，还可以有2,3？-->
+			<Text>{LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA}</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<!-- 领袖百科信息:描述你怎么解决这个领袖-->
+			<Text>Beware of his archers!</Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_CHAPTER_DETAILED_BODY" Language="en_US">
+			<!-- 领袖百科信息: 描述你该怎么玩这个领袖-->
+			<Text>Expand territory and use territories to annex each other.</Text>
+		</Row>
+		<!-- 领袖信息结束-->
+
+
+
+		<Row Tag="LOC_LEADER_FSN_ARCHER_EMIYA_QUOTE" Language="en_US">
+			<!-- 领袖百科信息: 一段有语音的词，单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>{LOC_PEDIA_LEADERS_PAGE_LEADER_FSN_ARCHER_EMIYA_QUOTE}</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_NAME" Language="en_US">
+			<!-- 领袖议程名称：单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>Justice</Text>
+		</Row>
+
+		<Row Tag="LOC_AGENDA_FSN_ARCHER_EMIYA_DESCRIPTION" Language="en_US">
+			<!-- 领袖议程说明: 单独被展示出来，这是来自Leader_Data的信息-->
+			<Text>Abomination</Text>
+		</Row>
+
+		<Row Tag="LOC_ABILITY_EMIYA_COMBAT_STRENGTH" Language="zh_Hans_CN">
+
+			<Text>-8 赝品</Text>
+		</Row>
+
+		<Row Tag="LOC_ABILITY_EMIYA_COMBAT_STRENGTH" Language="zh_Hant_HK">
+
+			<Text>-8 贋品</Text>
+		</Row>
+
+		<Row Tag="LOC_ABILITY_EMIYA_COMBAT_STRENGTH" Language="en_US">
+
+			<Text>-8 Fake</Text>
+		</Row>
+
+
+		<Row Tag="LOC_CITY_NAME_EMIYA_FUYUKI" Language="zh_Hans_CN">
+
+			<Text>冬木</Text>
+		</Row>
+
+		<Row Tag="LOC_CITY_NAME_EMIYA_FUYUKI" Language="zh_Hant_HK">
+
+			<Text>冬木</Text>
+		</Row>
+
+		<Row Tag="LOC_CITY_NAME_EMIYA_FUYUKI" Language="en_US">
+
+			<Text>Fuyuki</Text>
+		</Row>
+
+
+	</LocalizedText>
+
+</GameData>

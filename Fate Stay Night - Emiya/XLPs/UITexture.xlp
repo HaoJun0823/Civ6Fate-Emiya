@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>415</build>
+		<revision>990</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="EmiyaUITexture"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_256"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_32"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_45"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_48"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_50"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_55"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_64"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_FSN_ARCHER_EMIYA_80"/>
+			<m_ObjectName text="ICON_FSN_ARCHER_EMIYA_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_FSN_ARCHER_EMIYA_BACKGROUND"/>
+			<m_ObjectName text="LEADER_FSN_ARCHER_EMIYA_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_FSN_ARCHER_EMIYA_BACKGROUND_LOAD"/>
+			<m_ObjectName text="LEADER_FSN_ARCHER_EMIYA_BACKGROUND_LOAD"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_FSN_ARCHER_EMIYA_NEUTRAL"/>
+			<m_ObjectName text="LEADER_FSN_ARCHER_EMIYA_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_FSN_ARCHER_EMIYA_PORTRAIT"/>
+			<m_ObjectName text="LEADER_FSN_ARCHER_EMIYA_PORTRAIT"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

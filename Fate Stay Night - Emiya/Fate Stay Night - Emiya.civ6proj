@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Fate Stay Night - Emiya</Name>
+    <Guid>577ce9a4-8353-4e4b-83d1-0d7c6b3914cd</Guid>
+    <ProjectGuid>07b9cefd-25a6-4f5f-97a0-6793563652bc</ProjectGuid>
+    <ModVersion>2</ModVersion>
+    <Teaser>Fate Stay Night Emiya.</Teaser>
+    <Description>This is Fate Stay Night's actor Emiya.
+In order to let everyone learn how to make mod better, I made this mod, open source, and attached a tutorial.
+See:https://github.com/HaoJun0823/Civ6Fate-Emiya
+See:https://app.gitbook.com/@haojun0823/s/randerion-civ-mod-guide/</Description>
+    <Authors>Randerion(HaoJun0823)</Authors>
+    <SpecialThanks>All players, modders and TYPE-MOON.</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations />]]></AssociationData>
+    <AssemblyName>Fate Stay Night - Emiya</AssemblyName>
+    <RootNamespace>Fate Stay Night - Emiya</RootNamespace>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="LeaderCriteria"><LeaderPlayable>Players:StandardPlayers::LEADER_FSN_ARCHER_EMIYA,Players:Expansion1_Players::LEADER_FSN_ARCHER_EMIYA,Players:Expansion2_Players::LEADER_FSN_ARCHER_EMIYA</LeaderPlayable></Criteria><Criteria id="LeaderCriteria_Expansion1"><LeaderPlayable>Players:Expansion1_Players::LEADER_FSN_ARCHER_EMIYA</LeaderPlayable><RuleSetInUse>RULESET_EXPANSION_1</RuleSetInUse></Criteria><Criteria id="LeaderCriteria_Expansion2"><LeaderPlayable>Players:Expansion2_Players::LEADER_FSN_ARCHER_EMIYA</LeaderPlayable><RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="EmiyaPreData"><File>GameData/FrontEnd/FSN_Emiya_Archer_Config.xml</File></UpdateDatabase><UpdateArt id="EmiyaPreArt"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateIcons id="EmiyaPreIcons"><File>Icons/Fate_Emiya_Archer_Leader_Icons.xml</File></UpdateIcons><UpdateText id="EmiyaPreText"><File>Localization/FrontEnd/FSN_Emiya_Archer_Leader_FrontEnd.xml</File></UpdateText><UpdateColors id="EmiyaPreColors"><File>GameData/Color/FSN_Emiya_Archer_Leader_Colors.xml</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="EmiyaInGameData"><Criteria>LeaderCriteria</Criteria><File>GameData/InGame/FSN_Emiya_Archer_Leader_Data.xml</File><File>GameData/InGame/FSN_Emiya_Arhcer_Leader_Modifiers.sql</File></UpdateDatabase><UpdateIcons id="EmiyaInGameIcons"><File>Icons/Fate_Emiya_Archer_Leader_Icons.xml</File></UpdateIcons><UpdateArt id="EmiyaInGameArt"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateText id="EmiyaInGameText"><File>Localization/FrontEnd/FSN_Emiya_Archer_Leader_FrontEnd.xml</File><File>Localization/InGame/FSN_Emiya_Archer_Leader_InGame.xml</File></UpdateText><AddGameplayScripts id="EmiyaInGameLua" /><UpdateColors id="EmiyaInGameColors"><File>GameData/Color/FSN_Emiya_Archer_Leader_Colors.xml</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <Homepage>https://steamcommunity.com/id/HaoJun0823</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Fate_Stay_Night___Emiya.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+    <Folder Include="Data\ARX" />
+    <Folder Include="GameData" />
+    <Folder Include="GameData\FrontEnd" />
+    <Folder Include="GameData\InGame" />
+    <Folder Include="GameData\Color" />
+    <Folder Include="Localization" />
+    <Folder Include="Localization\FrontEnd\" />
+    <Folder Include="Localization\InGame\" />
+    <Folder Include="Icons" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameData\Color\FSN_Emiya_Archer_Leader_Colors.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameData\FrontEnd\FSN_Emiya_Archer_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameData\InGame\FSN_Emiya_Archer_Leader_Data.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameData\InGame\FSN_Emiya_Arhcer_Leader_Modifiers.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Icons\Fate_Emiya_Archer_Leader_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\FrontEnd\FSN_Emiya_Archer_Leader_FrontEnd.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\InGame\FSN_Emiya_Archer_Leader_InGame.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

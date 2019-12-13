@@ -1,0 +1,116 @@
+-- FSN_Emiya_Arhcer_Leader_Modifiers
+-- Author: HaoJun0823
+-- DateCreated: 8/30/2019 12:29:54 PM
+--------------------------------------------------------------
+
+-- 领土扩张速度+100%
+
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
+("TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW", "MODIFIER_FATE_EMIYA_CITIES_CULTURE_BORDER_EXPANSION");
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+("MODIFIER_FATE_EMIYA_CITIES_CULTURE_BORDER_EXPANSION", "MODIFIER_FATE_EMIYA_PLAYER_CITIES_CULTURE_BORDER_EXPANSION", 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+("MODIFIER_FATE_EMIYA_CITIES_CULTURE_BORDER_EXPANSION", "Amount", 100);
+
+-- Custom ModifierType
+
+INSERT INTO Types (Type, Kind) VALUES 
+("MODIFIER_FATE_EMIYA_PLAYER_CITIES_CULTURE_BORDER_EXPANSION", "KIND_MODIFIER");
+
+INSERT INTO DynamicModifiers (ModifierType, CollectionType, EffectType) VALUES 
+("MODIFIER_FATE_EMIYA_PLAYER_CITIES_CULTURE_BORDER_EXPANSION", "COLLECTION_PLAYER_CITIES", "EFFECT_ADJUST_CITY_CULTURE_BORDER_EXPANSION");
+
+-- 拥有粮仓的城市人口增长+50%
+
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
+("TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW", "MODIFIER_FATE_EMIYA_CITIES_GROWTH_REQUIREMENT_GRANARY");
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+("MODIFIER_FATE_EMIYA_CITIES_GROWTH_REQUIREMENT_GRANARY", "MODIFIER_PLAYER_CITIES_ADJUST_CITY_GROWTH", 0, 0, 0, NULL, "REQUIREMENT_SET_EMIYA_CITY_HAS_GRANARY");
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+("MODIFIER_FATE_EMIYA_CITIES_GROWTH_REQUIREMENT_GRANARY", "Amount", 50);
+
+-- Single Conditions
+
+INSERT INTO Requirements (RequirementId, RequirementType, ProgressWeight) VALUES 
+("REQUIREMENT_EMIYA_CITY_HAS_GRANARY", "REQUIREMENT_CITY_HAS_BUILDING", 0);
+
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
+("REQUIREMENT_EMIYA_CITY_HAS_GRANARY", "BuildingType", "BUILDING_GRANARY");
+
+-- Conditions Group
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
+("REQUIREMENT_SET_EMIYA_CITY_HAS_GRANARY", "REQUIREMENTSET_TEST_ALL");
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+("REQUIREMENT_SET_EMIYA_CITY_HAS_GRANARY", "REQUIREMENT_EMIYA_CITY_HAS_GRANARY");
+
+-- 单位射程+4
+
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
+("TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW", "MODIFIER_FATE_EMIYA_UNITS_ATTACK_RANGE");
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+("MODIFIER_FATE_EMIYA_UNITS_ATTACK_RANGE", "MODIFIER_PLAYER_UNITS_ADJUST_ATTACK_RANGE", 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+("MODIFIER_FATE_EMIYA_UNITS_ATTACK_RANGE", "Amount", 4);
+
+-- 未拥有工业化单位攻击力-8
+
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
+("TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW", "MODIFIER_FATE_EMIYA_UNITS_ATTACH_MODIFIER");
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+("MODIFIER_FATE_EMIYA_UNITS_ATTACH_MODIFIER", "MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER", 0, 0, 0, "REQUIREMENT_SET_EMIYA_NOT_HAVE_INDUSTRIALIZATION", "REQUIREMENT_SET_EMIYA_UNIT_PROMOTION_CHECK");
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+("MODIFIER_FATE_EMIYA_UNITS_ATTACH_MODIFIER", "ModifierId", "MODIFIER_FATE_EMIYA_UNIT_COMBAT_STRENGTH");
+
+-- Single Conditions
+
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES 
+("REQUIREMENT_EMIYA_NOT_HAVE_INDUSTRIALIZATION", "REQUIREMENT_PLAYER_HAS_TECHNOLOGY", 1);
+
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
+("REQUIREMENT_EMIYA_NOT_HAVE_INDUSTRIALIZATION", "TechnologyType", "TECH_INDUSTRIALIZATION");
+
+-- Conditions Group
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
+("REQUIREMENT_SET_EMIYA_NOT_HAVE_INDUSTRIALIZATION", "REQUIREMENTSET_TEST_ALL");
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+("REQUIREMENT_SET_EMIYA_NOT_HAVE_INDUSTRIALIZATION", "REQUIREMENT_EMIYA_NOT_HAVE_INDUSTRIALIZATION");
+
+--- 只有远程单位有效
+
+-- Single Conditions
+
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
+("REQUIREMENT_EMIYA_UNIT_PROMOTION_IS_CLASS_RANGED", "REQUIREMENT_UNIT_PROMOTION_CLASS_MATCHES");
+
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
+("REQUIREMENT_EMIYA_UNIT_PROMOTION_IS_CLASS_RANGED", "UnitPromotionClass", "PROMOTION_CLASS_RANGED");
+
+-- Conditions Group
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
+("REQUIREMENT_SET_EMIYA_UNIT_PROMOTION_CHECK", "REQUIREMENTSET_TEST_ALL");
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+("REQUIREMENT_SET_EMIYA_UNIT_PROMOTION_CHECK", "REQUIREMENT_EMIYA_UNIT_PROMOTION_IS_CLASS_RANGED");
+
+
+
+-- 未拥有工业化单位攻击力-8 特性
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+("MODIFIER_FATE_EMIYA_UNIT_COMBAT_STRENGTH", "MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH", 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+("MODIFIER_FATE_EMIYA_UNIT_COMBAT_STRENGTH", "Amount", -8);

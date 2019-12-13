@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FSN_Emiya_Archer_Leader_Data -->
+<!-- Author: HaoJun0823 -->
+<!-- DateCreated: 4/7/2019 1:10:14 AM -->
+<GameData>
+	<Types>
+		<Row Type="LEADER_FSN_ARCHER_EMIYA" Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_AGENDA_FSN_ARCHER_EMIYA" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW" Kind="KIND_TRAIT"/>
+	</Types>
+
+	<Leaders>
+		<Row LeaderType="LEADER_FSN_ARCHER_EMIYA" Name="LOC_LEADER_FSN_ARCHER_EMIYA_NAME" InheritFrom="LEADER_DEFAULT" Sex="Male" SceneLayers="4"/>
+	</Leaders>
+
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_FSN_ARCHER_EMIYA" Quote="LOC_LEADER_FSN_ARCHER_EMIYA_QUOTE"/>
+	</LeaderQuotes>
+
+	<Traits>
+		<Row TraitType="TRAIT_AGENDA_FSN_ARCHER_EMIYA" Name="LOC_TRAIT_AGENDA_FSN_ARCHER_EMIYA_NAME" Description="LOC_TRAIT_AGENDA_FSN_ARCHER_EMIYA_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW" Name="LOC_TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW_NAME" Description="LOC_LEADER_FSN_ARCHER_EMIYA_UBW_DESCRIPTION"/>
+	</Traits>
+
+	<LeaderTraits>
+		<Row LeaderType="LEADER_FSN_ARCHER_EMIYA" TraitType="TRAIT_LEADER_FSN_ARCHER_EMIYA_UBW"/>
+	</LeaderTraits>
+
+	<Agendas>
+		<Row AgendaType="AGENDA_FSN_ARCHER_EMIYA" Name="LOC_AGENDA_FSN_ARCHER_EMIYA_NAME" Description="LOC_AGENDA_FSN_ARCHER_EMIYA_DESCRIPTION"/>
+	</Agendas>
+
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_FSN_ARCHER_EMIYA" AgendaType="AGENDA_FSN_ARCHER_EMIYA"/>
+	</HistoricalAgendas>
+
+	<AgendaTraits>
+		<Row AgendaType="AGENDA_FSN_ARCHER_EMIYA" TraitType="TRAIT_AGENDA_FSN_ARCHER_EMIYA"/>
+	</AgendaTraits>
+
+
+	<TraitModifiers>
+		<Row TraitType="TRAIT_AGENDA_FSN_ARCHER_EMIYA" ModifierId="AGENDA_FSN_ARCHER_EMIYA_FRIEND"/>
+		<Row TraitType="TRAIT_AGENDA_FSN_ARCHER_EMIYA" ModifierId="AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND"/>
+	</TraitModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARED_FRIEND</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_FRIEND_DENOUNCED</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_FSN_ARCHER_EMIYA_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_FRIEND</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_KUDO_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY</Value>
+		</Row>
+
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_FSN_ARCHER_EMIYA_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_WARNING_EXIT_LEADER_FSN_ARCHER_EMIYA_ANY</Value>
+		</Row>
+	</ModifierArguments>
+
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_FSN_ARCHER_EMIYA_FRIEND" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FSN_ARCHER_EMIYA_DENOUNCED_FRIEND" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+	
+	
+	<!--
+	
+	<Colors>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_PRIMARY</Type>
+			<Color>245,196,96,255</Color>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_SECONDARY</Type>
+			<Color>199,16,36,255</Color>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_TEXT</Type>
+			<Color>226,228,235,255</Color>
+		</Row>
+	</Colors>
+
+	<PlayerColors>
+		<Row>
+			<Type>LEADER_FSN_ARCHER_EMIYA</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_PRIMARY</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_SECONDARY</SecondaryColor>
+			<TextColor>COLOR_PLAYER_LEADER_FSN_ARCHER_EMIYA_TEXT</TextColor>
+		</Row>
+	</PlayerColors>
+
+	-->
+
+	<LoadingInfo>
+		<Row LeaderType="LEADER_FSN_ARCHER_EMIYA" ForegroundImage="LEADER_FSN_ARCHER_EMIYA_NEUTRAL" BackgroundImage="LEADER_FSN_ARCHER_EMIYA_BACKGROUND_LOAD" PlayDawnOfManAudio="1" LeaderText="LOC_LOADING_INFO_LEADER_FSN_ARCHER_EMIYA"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_FSN_ARCHER_EMIYA" BackgroundImage="LEADER_FSN_ARCHER_EMIYA_BACKGROUND"/>
+	</DiplomacyInfo>
+
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_JAPAN" LeaderType="LEADER_FSN_ARCHER_EMIYA" CapitalName="LOC_CITY_NAME_EMIYA_FUYUKI"/>
+	</CivilizationLeaders>
+
+	<ModifierStrings>
+		<Row ModifierId="MODIFIER_FATE_EMIYA_UNIT_COMBAT_STRENGTH" Context="Preview" Text="LOC_ABILITY_EMIYA_COMBAT_STRENGTH"/>
+	</ModifierStrings>
+
+</GameData>

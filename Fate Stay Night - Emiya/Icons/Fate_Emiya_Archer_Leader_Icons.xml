@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fate_Emiya_Archer_Leader_Icons -->
+<!-- Author: HaoJun0823 -->
+<!-- DateCreated: 8/27/2019 9:02:57 AM -->
+<GameData>
+	<IconTextureAtlases>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_256.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_80.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_64.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_55.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_50.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_48.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_45.dds"/>
+		<Row Name="ATLAS_LEADER_FSN_ARCHER_EMIYA" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_FSN_ARCHER_EMIYA_32.dds"/>
+	</IconTextureAtlases>
+
+
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_FSN_ARCHER_EMIYA" Atlas="ATLAS_LEADER_FSN_ARCHER_EMIYA" index="0"/>
+	</IconDefinitions>
+
+</GameData>
